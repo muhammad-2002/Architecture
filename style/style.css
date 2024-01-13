@@ -20,7 +20,7 @@
 }
 .pragrap-style {
   color: var(--Dark-03);
-  text-align: center;
+
   font-family: Work Sans;
   font-size: 1rem;
   font-style: normal;
@@ -104,6 +104,9 @@
 .color-style-1 {
   color: #ff900e;
 }
+.features {
+  margin-top: 3.5rem;
+}
 
 .features-container {
   display: flex;
@@ -131,10 +134,62 @@
   text-align: start;
 }
 /* features section End  hear */
+.features-Enjoy-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.features-Enjoy-container .Enjoy-image {
+  width: 50%;
+}
+.features-Enjoy-container .Enjoy-content {
+  width: 50%;
+}
+.features-Enjoy-container .Enjoy-image img {
+  width: 100%;
+}
+.Enjoy-image .Architect {
+  margin-left: 10px;
+
+  padding: 0 2.5rem;
+}
+
+.Enjoy-image .button-img {
+  background: #ff900e;
+  color: #fff;
+  width: 13rem;
+  text-align: center;
+  padding: 0.9rem 0;
+  border-radius: 6px;
+  position: relative;
+  top: -2.1rem;
+}
 
 /* features Enjoy section start */
 /* features Enjoy section End */
-
+.features-Enjoy {
+  margin: 3.5rem auto;
+}
+.Enjoy-content-heading h2 {
+  border-left: 8px solid #ff900e;
+  padding-left: 10px;
+}
+.Enjoy-content-heading {
+  margin-bottom: 30px;
+}
+.Enjoy-content-card h3 {
+  font-size: 1rem;
+  color: var(--Dark-01);
+}
+.Enjoy-content .pragrap-styles {
+  font-size: 0.8rem;
+}
+.Enjoy-content-card {
+  margin-bottom: 20px;
+}
+.Enjoy-content-card * {
+  margin-bottom: 10px;
+}
 /* Responsive  Layout Design for Mobile*/
 
 @media screen and (max-width: 576px) {
@@ -145,7 +200,8 @@
     width: 90%;
     margin: 0 auto;
   }
-  .navbar {
+  .navbar,
+  .features-Enjoy-container {
     flex-direction: column;
   }
   .banner-heading {
@@ -155,8 +211,10 @@
   .banner-heading h1 {
     font-size: 2rem;
   }
+
   .features-container {
     flex-direction: column-reverse;
+    margin-top: 50px;
   }
   .features-container .features-content {
     width: 100%;
@@ -164,6 +222,14 @@
   .features-container .img-content {
     width: 100%;
     padding: 0px;
+  }
+  .features-Enjoy-container .Enjoy-content {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .features-Enjoy-container .Enjoy-image {
+    width: 100%;
+    margin-top: 50px;
   }
 }
 
@@ -191,5 +257,16 @@
   }
   .features-container {
     margin: 50px 0;
+  }
+  .features-Enjoy-container {
+    flex-direction: column;
+  }
+  .features-Enjoy-container .Enjoy-content {
+    width: 100%;
+    margin-top: 40px;
+  }
+  .features-Enjoy-container .Enjoy-image {
+    width: 100%;
+    margin-top: 30px;
   }
 }
